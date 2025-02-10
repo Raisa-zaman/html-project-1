@@ -308,3 +308,15 @@ li{
   font-size:30px ;
   font-weight: 700;
 }
+@media (max-width:570px){
+  .banner{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+  .banner-title{
+    width:400px;
+    text-align:center ;
+    margin-top:15px;
+    margin-left:40px;
+  }
+}
