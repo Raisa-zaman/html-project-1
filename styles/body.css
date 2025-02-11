@@ -98,7 +98,6 @@ li{
   display:flex;
   justify-content: center;
   align-items: center;
-  margin-right:270px;
 }
 .story-container-1{
   width:542px;
@@ -268,7 +267,12 @@ li{
   font-size: 18px;
   height:36px;
   width: 140px;
-  margin: 60px 0px 70px 300px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-left: 35px;
+  margin-top:40px;
+  margin-bottom: 80px;
   border-radius: 10px;
 }
 .main{
@@ -308,6 +312,27 @@ li{
   font-size:30px ;
   font-weight: 700;
 }
+@media (max-width:1020px) and (min-width:570px){
+  .story-container-1{
+    display:none;
+  }
+  .story-container-right-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+  }
+  .story-description{
+    width:250px;
+    margin-left: 70px;
+  }
+  .view-all-button-container{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+  }
+}
 @media (max-width:570px){
   .banner{
     display:flex;
@@ -318,5 +343,97 @@ li{
     text-align:center ;
     margin-top:15px;
     margin-left:40px;
+  }
+  .banner-description{
+    width:495px;
+    text-align: center;
+    margin-left: 12px;
+  }
+  .enroll-button{
+    margin-left: 170px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .table-container{
+    display:flex;
+    flex-direction: column;
+    margin-top:70px;
+    justify-content: center;
+    align-items: center;
+  }
+  .table-container .table-1,
+  .table-container .table-2,
+  .table-container .table-3{
+    width:440px;
+    height:320px;
+    margin-top:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .table-title{
+    text-align: center;
+    font-size:20px;
+    width: 300px;
+  }
+  .table-container .table-description{
+    width:330px;
+    text-align: center;
+  }
+  .story-container-1{
+    display:none;
+  }
+  .story-container-right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .story-container-2,
+  .story-container-3,
+  .story-container-4,
+  .story-container-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    height:260px;
+    margin-left:10px;
+  }
+  .story-description{
+    width:250px;
+    margin-left: 70px;
+  }
+  .view-all-button-container{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .list-title{
+    text-align: center;
+    margin-right:70px;
+  }
+  .left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    margin-right:130px;
+  }
+  .logo-description{
+    width: 480px;
+    text-align: center;
+  }
+  ul{
+    display: none;
   }
 }
